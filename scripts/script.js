@@ -18,7 +18,7 @@ function darkTheme() {
   //* alterando o botão de tema para o modo escuro
   document
     .getElementById("theme-btn")
-    .setAttribute("src", "/images/dark_mode_white_24dp.svg");
+    .setAttribute("src", "../images/dark_mode_white_24dp.svg");
 
   //* alterando a cor da variável css
 
