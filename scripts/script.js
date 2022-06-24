@@ -51,7 +51,7 @@ function whiteTheme() {
   //* alterando o botão de tema para o modo escuro
   document
     .getElementById("theme-btn")
-    .setAttribute("src", "/images/dark_mode_black_24dp.svg");
+    .setAttribute("src", "../images/dark_mode_black_24dp.svg");
 
   //* alterando a cor da variável css
   let bgLight = document.body.style.setProperty(
