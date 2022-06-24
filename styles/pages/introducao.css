@@ -101,7 +101,7 @@
 }
 @media (max-width: 768px) {
   .intro-area-text {
-    background-image: url(../images/carro-cover.jpg);
+    background-image: url(../../images/carro-cover.jpg);
     background-position: center;
     background-size: cover;
     color: #ffff;
