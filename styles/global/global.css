@@ -10,6 +10,24 @@ body {
   --cor-bg-card-dark-2: #404040; /**Alterado*/
   --cor-shadow-light: rgba(56, 56, 56, 0.2); /**Alterado*/
 }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-p1) var(--cor-bg-card-dark-2);
+}
+
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--cor-bg-card-dark-2);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--cor-p1);
+  border-radius: 20px;
+  border: 3px solid var(--cor-bg-card-dark-2);
+}
 
 body {
   background-color: var(--cor-bg-light);

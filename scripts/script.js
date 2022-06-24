@@ -58,6 +58,7 @@ function whiteTheme() {
     "--cor-bg-light",
     colorsLight.bgLightColor
   );
+
   let bgCard = document.body.style.setProperty(
     "--cor-bg-card-light",
     colorsLight.bgCardLightColor
