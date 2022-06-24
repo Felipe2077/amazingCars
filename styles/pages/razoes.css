@@ -1,0 +1,49 @@
+.razoes-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.razoes-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.razoes-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.razoes-card-footer {
+  background-color: var(--cor-bg-card-light);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10px;
+  gap: 10px;
+  box-shadow: 0px 8px 10px 0px var(--cor-shadow-light);
+  border-radius: 5px;
+}
+.card-title {
+  font-size: 1.5rem;
+}
+.razoes-card-footer p {
+  text-align: left;
+  font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  .razoes-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 580px) {
+  .razoes-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}

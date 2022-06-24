@@ -1,0 +1,173 @@
+.intro-area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.teste {
+  display: unset;
+}
+.intro-area-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: var(--cor-bg-card-light);
+  border-radius: 5px 0px 0px 5px;
+  text-align: right;
+  gap: 70px;
+  padding: 25px;
+  position: relative;
+}
+.intro-area-text::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  background-color: red;
+  top: 10px;
+  right: -25px;
+}
+.intro-area-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 30ch;
+  margin-bottom: 20px;
+}
+.intro-area-text p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 100ch;
+  margin-bottom: 20px;
+}
+.intro-area-text button {
+  padding: 10px 10px;
+}
+.intro-img img {
+  border-radius: 0px 5px 5px 0px;
+}
+@media (max-width: 1200px) {
+  .intro-area-text {
+    gap: 40px;
+  }
+}
+@media (max-width: 1100px) {
+  .intro-area-text {
+    gap: 30px;
+    padding: 20px;
+  }
+  .intro-area-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: max-content;
+  }
+  .intro-area-text p {
+    font-size: 1rem;
+    line-height: 25px;
+    max-width: max-content;
+  }
+  .intro-area-text button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .teste {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  .intro-area-text {
+    gap: 20px;
+    padding: 10px;
+  }
+  .intro-area-text h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    max-width: max-content;
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+  .intro-area-text p {
+    font-size: 1rem;
+    line-height: 20px;
+    max-width: max-content;
+    margin-bottom: 10px;
+  }
+  .intro-area-text button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .intro-area-text {
+    background-image: url(/images/carro-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ffff;
+    padding: 0px;
+    display: unset;
+    justify-content: center;
+    padding: 0px;
+  }
+  .teste {
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2.5rem;
+    font-weight: 700;
+    max-width: max-content;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    padding: 30px 20px 30px 20px;
+  }
+  .intro-area-text h1 {
+    font-weight: 700;
+    max-width: 100ch;
+  }
+  .intro-area-text p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    max-width: 100ch;
+  }
+  .intro-area-text button {
+    font-size: 1rem;
+  }
+  .intro-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .intro-img {
+    display: none;
+  }
+  .intro-area-text::before {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .teste {
+    gap: 20px;
+    padding: 35px 10px 35px 10px;
+  }
+  .intro-area-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: max-content;
+  }
+  .intro-area-text p {
+    font-size: 0.9rem;
+    line-height: 20px;
+    max-width: max-content;
+  }
+  .intro-area-text button {
+    font-size: 0.8rem;
+  }
+}

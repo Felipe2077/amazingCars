@@ -1,0 +1,9 @@
+@import url(./global/global.css);
+@import url(./components/card.css);
+@import url(./components/botaoPrimario.css);
+@import url(./pages/header.css);
+@import url(./pages/introducao.css);
+@import url(./pages/razoes.css);
+@import url(./pages/cars.css);
+@import url(./pages/lojas.css);
+@import url(./pages/footer.css);

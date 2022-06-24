@@ -1,0 +1,82 @@
+body {
+  --cor-p1: #eb2929;
+  --color-text-1: #111111; /**Alterado*/
+  --color-text-1-dark: #ffffff;
+  --cor-bg-light: #eeeeee; /**Alterado*/
+  --cor-bg-card-light: #ffffff; /**Alterado*/
+  --cor-bg-card-light2: #ffffff;
+  --cor-bg-dark: #1a1a1a; /**Alterado*/
+  --cor-bg-card-dark: #2e2e2e; /**Alterado*/
+  --cor-bg-card-dark-2: #404040; /**Alterado*/
+  --cor-shadow-light: rgba(56, 56, 56, 0.2); /**Alterado*/
+}
+
+body {
+  background-color: var(--cor-bg-light);
+  font-family: "Poppins", sans-serif;
+  margin: 0px 20px 0px 20px;
+  padding: 0px;
+  color: var(--color-text-1);
+}
+main {
+  margin-bottom: 40px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0px auto 0px auto;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+a,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+#img {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.titles {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 950px) {
+  .titles {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 580px) {
+  .titles {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 425px) {
+  .titles {
+    font-size: 1.5rem;
+  }
+}
