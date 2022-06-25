@@ -12,16 +12,20 @@ body {
   --cor-shadow-light: rgba(56, 56, 56, 0.2); /**Alterado*/
 }
 footer {
-  display: flex;
-  flex-direction: column;
   background-color: var(--cor-bg-dark-footer);
   color: var(--color-text-1-dark);
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--cor-p1);
 }
 
 .footer-contact-area {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 1440px;
   align-items: center;
+  margin: 0px auto 20px auto;
 }
 .footer-logo-area {
   display: flex;
@@ -70,11 +74,12 @@ footer {
   margin-left: -1em;
 }
 .footer-contact-area {
-  border-top: 3px solid var(--cor-p1);
-}
-.footer-contact-area {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .footer-social {
   color: var(--color-text-1-dark);
   display: flex;

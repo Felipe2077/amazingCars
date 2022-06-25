@@ -1,6 +1,6 @@
 let colorsDark = darkColors;
 let colorsLight = lightColors;
-document.querySelector(".theme-switch").addEventListener("click", function () {
+document.querySelector("#theme-btn").addEventListener("click", function () {
   let theme = document.querySelector("#body").getAttribute("class");
 
   if (theme === "white-theme") {
@@ -16,10 +16,8 @@ document.querySelector(".theme-switch").addEventListener("click", function () {
 
 function darkTheme() {
   //* alterando o botão de tema para o modo escuro
-  document
-    .getElementById("theme-btn")
-    .setAttribute("src", "../images/dark_mode_white_24dp.svg");
-
+  let btnTheme = document.getElementById("theme-btn");
+  btnTheme.classList.toggle("theme-switch-dark");
   //* alterando a cor da variável css
 
   let bgDark = document.body.style.setProperty(
@@ -49,9 +47,8 @@ function darkTheme() {
 
 function whiteTheme() {
   //* alterando o botão de tema para o modo escuro
-  document
-    .getElementById("theme-btn")
-    .setAttribute("src", "../images/dark_mode_black_24dp.svg");
+  let btnTheme = document.getElementById("theme-btn");
+  btnTheme.classList.toggle("theme-switch-dark");
 
   //* alterando a cor da variável css
   let bgLight = document.body.style.setProperty(

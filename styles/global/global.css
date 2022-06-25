@@ -32,12 +32,18 @@ body {
 body {
   background-color: var(--cor-bg-light);
   font-family: "Poppins", sans-serif;
-  margin: 0px 20px 0px 20px;
+  margin: 0px;
   padding: 0px;
   color: var(--color-text-1);
+  margin-left: auto;
+  margin-right: auto;
 }
 main {
   margin-bottom: 40px;
+}
+main,
+header {
+  padding: 0px 20px 0px 20px;
 }
 .container {
   max-width: 1440px;

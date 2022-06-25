@@ -28,6 +28,19 @@
 }
 .theme-switch {
   cursor: pointer;
+  background-image: url(../../images/dark_mode_black_24dp.svg);
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.theme-switch-dark {
+  cursor: pointer;
+  background-image: url(../../images/dark_mode_white_24dp.svg);
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 nav {
   display: flex;
@@ -45,10 +58,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.theme-img {
-  width: 36px;
 }
 
 @media (max-width: 950px) {
