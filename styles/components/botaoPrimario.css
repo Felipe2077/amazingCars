@@ -5,4 +5,5 @@
   background-color: var(--cor-p1);
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
