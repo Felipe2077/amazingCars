@@ -45,17 +45,22 @@ function whiteTheme() {
   let textDark = setColor("--color-text-1", colorsLight.textColorLight);
   let shadowDark = setColor("--cor-shadow-light", colorsDark.shadowDarkColor);
 }
-activateColorTheme();
 
 //* smooth scroll:
-let menuItem = document.querySelectorAll(".menu a[href^='#']");
-menuItem.forEach((item) => {
-  item.addEventListener("click", (clicado) => {
-    clicado.preventDefault();
-    let id = item.getAttribute("href");
-    let section = document.querySelector(id);
-    section.scrollIntoView({
-      behavior: "smooth",
+
+function smoothScroll() {
+  let menuItem = document.querySelectorAll(".menu a[href^='#']");
+  menuItem.forEach((item) => {
+    item.addEventListener("click", (clicado) => {
+      clicado.preventDefault();
+      let id = item.getAttribute("href");
+      let section = document.querySelector(id);
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
     });
   });
-});
+}
+
+activateColorTheme();
+smoothScroll();
