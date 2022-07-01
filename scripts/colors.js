@@ -1,40 +1,22 @@
 //* selecionando o body
 const allColors = document.querySelector("body");
 
+function getColor(color) {
+  return getComputedStyle(allColors).getPropertyValue(color);
+}
+
 let darkColors = {
-  bgDarkColor: getComputedStyle(allColors).getPropertyValue("--cor-bg-dark"),
-  //*
-  bgCardDarkColor:
-    getComputedStyle(allColors).getPropertyValue("--cor-bg-card-dark"),
-  //*
-  bgCardDark2Color: getComputedStyle(allColors).getPropertyValue(
-    "--cor-bg-card-dark-2"
-  ),
-  //*
-  textColorDark: getComputedStyle(allColors).getPropertyValue(
-    "--color-text-1-dark"
-  ),
-  //*
-  shadowDarkColor:
-    getComputedStyle(allColors).getPropertyValue("--cor-shadow-light"),
+  bgDarkColor: getColor("--cor-bg-dark"),
+  bgCardDarkColor: getColor("--cor-bg-card-dark"),
+  bgCardDark2Color: getColor("--cor-bg-card-dark-2"),
+  textColorDark: getColor("--color-text-1-dark"),
+  shadowDarkColor: getColor("--cor-shadow-light"),
 };
 
-//** */
-
 let lightColors = {
-  bgLightColor: getComputedStyle(allColors).getPropertyValue("--cor-bg-light"),
-  //*
-  bgCardLightColor: getComputedStyle(allColors).getPropertyValue(
-    "--cor-bg-card-light"
-  ),
-  //*
-  bgCardLight2Color: getComputedStyle(allColors).getPropertyValue(
-    "--cor-bg-card-light2"
-  ),
-  //*
-  textColorLight:
-    getComputedStyle(allColors).getPropertyValue("--color-text-1"),
-  //*
-  shadowLightColor:
-    getComputedStyle(allColors).getPropertyValue("--cor-shadow-light"),
+  bgLightColor: getColor("--cor-bg-light"),
+  bgCardLightColor: getColor("--cor-bg-card-light"),
+  bgCardLight2Color: getColor("--cor-bg-card-light2"),
+  textColorLight: getColor("--color-text-1"),
+  shadowLightColor: getColor("--cor-shadow-light"),
 };
