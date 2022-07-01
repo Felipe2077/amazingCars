@@ -37,6 +37,7 @@ body {
   color: var(--color-text-1);
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 200ms linear;
 }
 main {
   margin-bottom: 40px;
